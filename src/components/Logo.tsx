@@ -7,7 +7,7 @@ export default function Logo({ sx }: BoxProps) {
     <RouterLink to={`/${MAIN_PATH.browse}`}>
       <Box
         component="img"
-        alt="Netflix Logo"
+        alt="DC Logo"
         src="/assets/durham-college.webp"
         width={57}
         height={40}

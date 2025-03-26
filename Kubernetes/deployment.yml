@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dc-app
+  labels:
+    app: dc-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dc-app
+  template:
+    metadata:
+      labels:
+        app: dc-app
+    spec:
+      containers:
+      - name: dc-app
+        image: nasi101/dc:latest
+        ports:
+        - containerPort: 80
