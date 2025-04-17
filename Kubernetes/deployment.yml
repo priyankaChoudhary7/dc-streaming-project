@@ -15,7 +15,7 @@ spec:
         app: dc
     spec:
       containers:
-      - name: dc-app
+      - name: dc
         image: sarveshmore/dc:latest
         ports:
         - containerPort: 80
