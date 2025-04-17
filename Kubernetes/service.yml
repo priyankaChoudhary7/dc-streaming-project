@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dc-app
+  name: dc
   labels:
-    app: dc-app
+    app: dc
 spec:
   type: NodePort
   ports:
@@ -11,4 +11,4 @@ spec:
     targetPort: 80
     nodePort: 30007
   selector:
-    app: dc-app
+    app: dc
